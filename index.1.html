@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ui/UX first Chat designing</title>
+    <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+        <div class='container-main'>
+                    <!-- Left bar -->
+   <aside class="left-bar-buttons">
+        <img src="img/Jack.jpg" alt="" id="left-bar-self-pc">
+        <button class="button-left-bar-icons"><i data-eva="message-circle" fill="rgba(200,200,200,100%)" onclick="LastmessageSelected()"></i></button>
+        <button class="button-left-bar-icons"><i data-eva="person" fill="rgba(200,200,200,100%)"></i></button>
+        <button class="button-left-bar-icons"><i data-eva="people" fill="rgba(200,200,200,100%)"></i></button>
+        <button class="button-left-bar-icons"><i data-eva="email" fill="rgba(200,200,200,100%)"></i></button>
+        <button class="button-left-bar-icons"><i data-eva="settings-2" fill="rgba(200,200,200,100%)"></i></button>
+        <button class="button-left-bar-icons logout"><i data-eva="log-out" fill="rgba(200,200,200,100%)"></i></button>
+    </aside>
+    <!-- Contacts - Chats -->
+     <section id="contacts-chats">
+        <div id='search-bar'>
+                <div id="search-bar-div">
+                        <i class="search-icon" data-eva="search" data-eva-animation="shake" fill="rgba(87,98,108,100%)"></i>
+                        <input type="text" name="Search" placeholder="Search" id="search-bar-text">
+                    </div>
+                    <div id="plus-near-search">
+                            <i class="plus-icon" data-eva="plus" fill="rgba(87,98,108,100%)"></i>
+                        </div>
+        </div>
+        <hr id="hr">
+
+        <div id="container-of-contact">
+                <svg id="left-contact-self-pc">
+                        <circle cx="25" cy="32" r="20" fill="rgba(200,200,200,100%)" id="circle"/>
+                </svg>
+                <div id="contact-name-last-message">
+                        <h4 id="name-of-contact-contacts">Name of person</h4>
+                        <p id="last-message">but... something !</p>
+                </div>
+
+                <div id="contact-left-status-container">                 
+                        <svg id="contact-left-status">  
+                            <circle cx="15" cy="15" r="10" fill="rgb(84, 212, 138)" id="circle"/>
+                        </svg>
+                        <p id="messages-counter">6</p>    
+                </div>
+
+            </div>
+        <div id="container-of-contact">
+                <svg id="left-contact-self-pc">
+                        <circle cx="25" cy="32" r="20" fill="rgba(250,100,100,100%)" id="circle"/>
+                </svg>
+                <div id="contact-name-last-message">
+                    <h4 id="name-of-contact-contacts">Name of person</h4>
+                    <p id="last-message">something else !</p>
+                </div>
+                <div id="contact-left-status-container-bookmark">
+                        <i id="attach-icon" data-eva="attach" fill="rgba(78,177,123,100%)"></i>                               
+                </div>
+        </div>
+        <div id="container-of-contact">
+                <svg id="left-contact-self-pc">
+                        <circle cx="25" cy="32" r="20" fill="rgba(100,100,250,100%)" id="circle"/>
+                </svg>
+                <div id="contact-name-last-message">
+                        <h4 id="name-of-contact-contacts">Name of person</h4>
+                        <p id="last-message">The third message!</p>
+                </div>
+                <div id="contact-left-status-container-bookmark">
+                        <i id="bookmark-icon" data-eva="bookmark" fill="rgba(246,97,96,100%)"></i>                               
+                </div>
+        </div>
+        <div id="container-of-contact">
+                <svg id="left-contact-self-pc">
+                        <circle cx="25" cy="32" r="20" fill="rgba(10,100,250,100%)" id="circle"/>
+                </svg>
+                <div id="contact-name-last-message">
+                        <h4 id="name-of-contact-contacts">Name of person</h4>
+                        <p id="last-message">how many times do I have to say something ??!</p>
+                </div>
+                <div id="contact-left-status-container">                 
+                        <svg id="contact-left-status">  
+                            <circle cx="15" cy="15" r="10" fill="rgb(84, 212, 138)" id="circle"/>
+                        </svg>
+                        <p id="messages-counter">3</p>    
+                </div>
+        </div>
+        <div id="container-of-contact">
+                <svg id="left-contact-self-pc">
+                        <circle cx="25" cy="32" r="20" fill="rgba(100,200,200,100%)" id="circle"/>
+                </svg>     
+                <div id="contact-name-last-message">
+                        <h4 id="name-of-contact-contacts">Name of person</h4>
+                        <p id="last-message">Com'on !</p>
+                </div> 
+                <div id="contact-left-status-container-now">                 
+                        <div id="contact-left-status-now">  
+                                <p id="messages-counter-now">now</p>                                
+                        </div>
+                </div>
+        </div>
+        <div id="container-of-contact" class="current-contact">
+                <img src="img/Jack2.jpg" alt="" id="left-contact-self-pc-current">
+                        <div id="contact-name-last-message">
+                                <h4 id="name-of-contact-contacts-current">SHADOW ZXC</h4>
+                                <p id="last-message"><span id="mentioned">@Alex Thompson</span> give me your number!</p>
+                        </div>
+                        <div id="contact-left-status-container">                 
+                                <svg id="contact-left-status">  
+                                    <circle cx="15" cy="15" r="10" fill="rgb(84, 212, 138)" id="circle"/>
+                                </svg>
+                                <p id="messages-counter">@</p>    
+                        </div>
+                </div>
+    </section> 
+    <!-- Main chat -->
+    <section id="main-chat">
+        <div id="main-chat-header">
+            <div id="left-main-chat-header">
+                <h1 id="main-chat-name">SHADOW ZXC</h1>
+                <div id="online-div">
+                    <svg class="online-icon">
+                        <circle cx="3" cy="3" r="3" fill="rgba(95,209,132,100%)"/>
+                    </svg>
+                    <p id="online-p">Online</p>
+                </div>
+            </div>
+            <div id="right-main-chat-header">
+                <i id="contact-icon" data-eva="phone" fill="rgba(153,168,180,100%)"></i>
+                <i id="folder-icon" data-eva="folder" fill="rgba(153,168,180,100%)"></i>
+                <i id="video-icon" data-eva="video" fill="rgba(153,168,180,100%)"></i>                
+            </div>
+            <div id="more-info" onclick="hideShow()">
+                    <i id="back-icon" data-eva="arrow-ios-forward" width="25px" fill="rgba(167,180,190,100%)"></i>
+            </div>
+        </div>
+            <div id="messages-view">
+                <div id="messageEdit">
+                        <button><p>Edit</p></button>
+                        <button ondblclick="deleteMServer(Mainmessage)"><p>delete</p></button>
+                </div>
+                
+                <div id="type-form">
+                        <div id="left-nav-type">
+                                <i id="emoji-icon" data-eva="play-circle" fill="rgba(153,168,180,100%)"></i>
+                                <i id="attach-icon" data-eva="attach" fill="rgba(153,168,180,100%)"></i>
+                                <!-- <input type="text" placeholder="Type a message..." id="type-message"> -->
+                                <input type="text" placeholder="Type a message..." id="type-message"></input>
+                        </div>
+                        <div id="right-nav-type">
+                        <i id="nav-icon" data-eva="navigation-2" data-eva-animation="shake" fill="rgba(95,209,132,100%)" onclick="sendMessage()"></i>
+                        </div>
+                </div>
+        </div>       
+    </section>
+
+    <!-- Person info -->
+    <section id="section-info-chat">
+        <div id="section-info-chat-div">
+                <img src="img/Jack2.jpg" alt="" id="chat-view-info-person">     
+                <p id="chat-info-name">SHADOW ZXC</p>
+                <p id="chat-info-bio">Web Developer/ Designer</p>
+                <div id="bio-container-info-icons">
+                        <span><i data-eva="email" fill="rgba(170,185,197,100%)"></i><p>faded.lover.shadows@gmail.com</p></span>
+                        <span><i data-eva="camera" fill="rgba(170,185,197,100%)"></i><p>AX_TechLead</p></span>
+                        <span><i data-eva="smartphone-outline" fill="rgba(170,185,197,100%)"></i><p>+201154564748</p></span>
+                </div>
+                <button>Send your request!</button>
+            </div>
+    </section>
+        </div>
+    <script src="js/showHide.js"></script>
+    <script src="js/eva.js"></script>
+    <script src="js/socket.io.js"></script>
+    <script src="js/editM.js"></script>
+    <script src="js/create-messages.js"></script>
+        <script>
+                 eva.replace();
+                //  Launch the socket io client, without it io.on won't sense anything from the client side!
+                 var socket = io();
+                 var messagesR = document.querySelectorAll('.messages-right');
+                 var messagesL = document.querySelectorAll('.messages-left');
+                 if (messagesR.length != 0 || messagesL.length != 0) {
+                      var noMessages = document.querySelector('#no-messages');
+                      noMessages.style.display = 'none';   
+                 }
+                //  prints the user's info!
+                 socket.on('connections', (data)=> {
+                                        console.log(data.message + ' , ID : ' + data.ID);
+                 });
+                // THIS IS A LISTENER FOR THE SERVER'S RESPONSES AND DATA, needs to be out of the same function that has the trigger..
+                 socket.on('new message', (data)=> {
+                                        console.log(data.user);
+                                        if (data.user == 1 && socket.id == data.ID) {
+                                                newMessageClientR(data); 
+                                        } else if (data.user == 2 && socket.id == data.ID) {
+                                                newMessageClientR(data); 
+                                        } else {
+                                                newMessageClientL(data);
+                                        }
+                                        console.log(data.message);
+                                        document.querySelector('#type-message').value = '';
+                                });
+
+                socket.on('removeMessage', (data)=> {
+                        messagesR = document.querySelectorAll('.messages-right');
+                        messagesL = document.querySelectorAll('.messages-left');
+                        for(i = 0;i<messagesR.length;i++){
+                        if(messagesR.item(i).getAttribute('index') == data.messageIndex.toString()){
+                                deleteM(messagesR.item(i));
+                        }
+                        }
+                        for(i = 0;i<messagesL.length;i++){
+                        if(messagesL.item(i).getAttribute('index') == data.messageIndex.toString()){
+                                deleteM(messagesL.item(i));
+                        }
+                        }
+                        messagesR = document.querySelectorAll('.messages-right');
+                        messagesL = document.querySelectorAll('.messages-left');
+                        if (messagesR.length != 0 ||messagesL.length != 0) {
+                                var noMessages = document.querySelector('#no-messages');
+                                noMessages.style.display = 'none';   
+                        }
+                });
+
+                // EMIT TO THE SERVER AFTER PRESSING ENTER KEY ON THE KEYBOARD.
+                addEventListener('keypress', (e)=> {
+                        if (e.keyCode == 13) {
+                                var typeXV = document.querySelector('#type-message').value;
+                                if (typeXV != null && typeXV != '' && typeXV != ' ') {
+                                // Makes a task called new message with values and send to the server.
+                                socket.emit('new message', {
+                                        'user': socket.id,
+                                        'message' : typeXV
+                                });
+                        }    
+                        }
+                });
+                 function sendMessage() {
+                        var typeXV = document.querySelector('#type-message').value;
+                        if (typeXV != null && typeXV != '' && typeXV != ' ') {
+                                // Makes a task called new message with a value.
+                                socket.emit('new message', {
+                                        'user': socket.id,
+                                        'message' : typeXV
+                                });
+                        }
+                 }
+                 
+                
+        </script>
+</body>
+</html>
